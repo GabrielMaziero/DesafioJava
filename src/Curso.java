@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -8,7 +9,7 @@ public class Curso {
     private ProfessorTitular professorTitular;
     private ProfessorSub professorSub;
     private Integer limiteAlunos;
-    private List<Aluno> listaDeAlunos;
+    private List<Aluno> listaDeAlunos = new ArrayList<>();
 
     public String getNome() {
         return nome;
@@ -69,5 +70,18 @@ public class Curso {
     @Override
     public int hashCode() {
         return Objects.hash(cdCurso);
+    }
+
+    public Boolean adicionarUmAluno(Aluno umAluno) {
+        if (this.listaDeAlunos.size() >= this.limiteAlunos) {
+            return false;
+        } else {
+            this.listaDeAlunos.add(umAluno);
+            return true;
+        }
+    }
+
+    public void excluirAluno(Aluno umAluno) {
+        this.listaDeAlunos.remove(umAluno);
     }
 }

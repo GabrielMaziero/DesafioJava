@@ -6,5 +6,5 @@ public class DigitalHouseManager {
     private List<Professor> listaDeProfessores;
     private List<Curso> listaDeCursos;
     private List<Matricula> listaDeMatricula;
-    
+
 }
