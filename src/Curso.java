@@ -11,6 +11,12 @@ public class Curso {
     private Integer limiteAlunos;
     private List<Aluno> listaDeAlunos = new ArrayList<>();
 
+    public Curso(String nome, Integer cdCurso, Integer quantidadeMaximaDeAlunos) {
+        this.nome = nome;
+        this.cdCurso = cdCurso;
+        quantidadeMaximaDeAlunos = quantidadeMaximaDeAlunos;
+    }
+
     public String getNome() {
         return nome;
     }

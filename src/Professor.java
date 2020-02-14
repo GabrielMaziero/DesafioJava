@@ -7,6 +7,13 @@ public class Professor {
     private Integer cdProfessor;
     private Integer tempoCasa;
 
+    public Professor(String nome, String sobrenome, Integer cdProfessor) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.cdProfessor = cdProfessor;
+        this.tempoCasa = 0;
+    }
+
     public String getNome() {
         return nome;
     }
