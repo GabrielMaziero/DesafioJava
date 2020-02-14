@@ -1,9 +1,14 @@
+import java.util.List;
 import java.util.Objects;
 
 public class Curso {
 
     private String nome;
     private Integer cdCurso;
+    private ProfessorTitular professorTitular;
+    private ProfessorSub professorSub;
+    private Integer limiteAlunos;
+    private List<Aluno> listaDeAlunos;
 
     public String getNome() {
         return nome;
@@ -19,6 +24,38 @@ public class Curso {
 
     public void setCdCurso(Integer cdCurso) {
         this.cdCurso = cdCurso;
+    }
+
+    public ProfessorTitular getProfessorTitular() {
+        return professorTitular;
+    }
+
+    public void setProfessorTitular(ProfessorTitular professorTitular) {
+        this.professorTitular = professorTitular;
+    }
+
+    public ProfessorSub getProfessorSub() {
+        return professorSub;
+    }
+
+    public void setProfessorSub(ProfessorSub professorSub) {
+        this.professorSub = professorSub;
+    }
+
+    public Integer getLimiteAlunos() {
+        return limiteAlunos;
+    }
+
+    public void setLimiteAlunos(Integer limiteAlunos) {
+        this.limiteAlunos = limiteAlunos;
+    }
+
+    public List<Aluno> getListaDeAlunos() {
+        return listaDeAlunos;
+    }
+
+    public void setListaDeAlunos(List<Aluno> listaDeAlunos) {
+        this.listaDeAlunos = listaDeAlunos;
     }
 
     @Override
