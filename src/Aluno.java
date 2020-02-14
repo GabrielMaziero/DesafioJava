@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Aluno {
     private String nome;
     private String sobrenome;
-    private int codAluno;
+    private Integer codAluno;
 
     public Aluno(String nome, String sobrenome, int codAluno) {
         this.nome = nome;
@@ -16,7 +16,7 @@ public class Aluno {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Aluno aluno = (Aluno) o;
-        return codAluno == aluno.codAluno;
+        return Objects.equals(codAluno, aluno.codAluno);
     }
 
     @Override
