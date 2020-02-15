@@ -5,9 +5,8 @@ public class Matricula {
     private Curso curso;
     private Date dataM = new Date();
 
-    public Matricula(Aluno aluno, Curso curso, Date dataM) {
+    public Matricula(Aluno aluno, Curso curso) {
         this.aluno = aluno;
         this.curso = curso;
-        this.dataM = dataM;
     }
 }

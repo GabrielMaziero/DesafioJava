@@ -14,5 +14,4 @@ public class ProfessorSub extends Professor {
         super(nome, sobrenome, cdProfessor);
         this.qtdHoras = qtdHoras;
     }
-
 }

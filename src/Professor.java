@@ -58,4 +58,14 @@ public class Professor {
     public int hashCode() {
         return Objects.hash(cdProfessor);
     }
+
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", cdProfessor=" + cdProfessor +
+                ", tempoCasa=" + tempoCasa +
+                '}';
+    }
 }

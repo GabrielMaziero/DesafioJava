@@ -6,13 +6,17 @@ public class teste {
         Aluno aluno1 = new Aluno("Gabriel", "Maziero", 2019);
         Aluno aluno2 = new Aluno("Caio", "Mascaranhas", 2018);
         Aluno aluno3 = new Aluno("Mariana", "Maziero", 2017);
-        Curso curso = new Curso();
+        Curso curso = new Curso("Alura",1020,0);
 
-        curso.setLimiteAlunos(10);
+//        curso.setLimiteAlunos(10);
+//        System.out.println(curso.adicionarUmAluno(aluno1));
+//        System.out.println(curso.adicionarUmAluno(aluno2));
+//        System.out.println(curso.adicionarUmAluno(aluno3));
+//        System.out.println(curso.getListaDeAlunos());
 
-        System.out.println(curso.adicionarUmAluno(aluno1));
-        System.out.println(curso.adicionarUmAluno(aluno2));
-        System.out.println(curso.adicionarUmAluno(aluno3));
-        System.out.println(curso.getListaDeAlunos());
+        DigitalHouseManager digitalHouseManager = new DigitalHouseManager();
+
+        digitalHouseManager.matricularAluno(2019,1020);
+        digitalHouseManager.matricularAluno(2019,1020);
     }
 }
